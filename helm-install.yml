@@ -1,16 +1,11 @@
 --- 
-- 
-  hosts: all
+- hosts: all
   tasks: 
-    - 
-      command: "helm list"
+    - command: "helm list"
       name: "Execute helm command"
       register: out1
-    - 
-      debug: var=out1.stdout_lines
-- 
-  command: "helm install stable/{{chart_name}} --namespace {{namespace}}"
+    - debug: var=out1.stdout_lines
+- command: "helm install stable/{{chart_name}} --namespace {{namespace}}"
   name: "Execute helm command"
   register: out1
-- 
-  debug: var=out1.stdout_lines
+- debug: var=out1.stdout_lines
