@@ -3,5 +3,5 @@
   tasks: 
     - command: "helm list"
       name: "Execute helm command"
-- command: "helm install stable/{{chart_name}} --namespace {{namespace}}"
-  name: "Execute helm command"
+    - command: "helm install stable/{{chart_name}} --namespace {{namespace}}"
+      name: "Execute helm command"
