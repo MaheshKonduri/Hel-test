@@ -1,5 +1,5 @@
 --- 
-- hosts: all
+- hosts: localhost
   tasks: 
     - command: "helm list"
       name: "Execute helm command"
